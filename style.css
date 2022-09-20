@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+:root{
+    --color1: #0f0f0f; 
+    --color2: #d7d9dc;
+    --color3: #e9e9e9;
+    --color4: #545454; 
+
+    --dimenciones: 285px;
+}
+
+body{
+    width: 99vw;
+    /* background-color: #d7d9dc; */
+}
+
+.container--gifos{
+    width: 285px;
+    height: 285px;
+    border-radius: 5px;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--color3);
+}
+
+.container--gifos--munu{
+    width: 285px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.gifos--menu--galeria{
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 0 0 ;
+}
+
+.gifos--titulo{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: 'MonteCarlo', cursive;
+    color: var(--color1);
+    font-size: 10pt;
+}
+
+.container--gifos--marco{
+    width: 165px;
+    height: 230px;
+    box-shadow: 10px 7px 14px 2px #3e424b;
+}
+
+.container--gifos--img{
+    border-top: 25px solid #acacac;
+    border-right: 25px solid #c4c4c4;
+    border-bottom: 25px solid #c8c8c8;
+    border-left: 25px solid #b8b8b8;
+    width: 115px;
+    height: 180px;
+}
+
+.container--gifos--img img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px 1px var(--color3);
+}
+
+.img--item--1{
+    width: 5px;
+    height: 230px;
+    background-color: var(--color3);
+    position: absolute;
+    z-index: 30;
+    box-shadow: 3px 0 5px -1px var(--color4);
+}
+
+.img--item--2{
+    width: 165px;
+    height: 5px;
+    background-color: var(--color3);
+    position: absolute;
+    z-index: 40;
+    box-shadow: 0 3px 5px -1px var(--color4);
+}
+
+.img--item--3{
+    width: 165px;
+    height: 5px;
+    background-color: var(--color3);
+    position: absolute;
+    transform: translateY(225px);
+    z-index: 20;
+    box-shadow: 0 -3px 5px -1px var(--color4);
+}
+
+.img--item--4{
+    width: 5px;
+    height: 230px;
+    background-color: var(--color3);
+    position: absolute;
+    z-index: 2;
+    transform: translateX(160px);
+    z-index: 30;
+    box-shadow: -3px 0 5px -1px var(--color4);
+}
+
+/* -------------------------------------------------- */
+
+.container{
+    width: var(--dimenciones);
+    height: var(--dimenciones);
+
+    border: 1px solid red;
+    background-color: var(--color2);
+}
+
+.container--marco{
+    width: calc(165 * 100% / 285);
+    height: calc(230 * 100% / 285);
+
+    /* border: 1px solid blue; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 10px 5px 20px 2px var(--color1);
+}
+
+.marco--top{
+    width: 100%;
+    height: calc(5 * 100% / 230);
+
+    background-color: var(--color3);
+    box-shadow: 0 3px 5px 1px var(--color4);
+    z-index: 40;
+}
+
+.marco--botton{
+    width: 100%;
+    height: calc(5 * 100% / 230);
+
+    background-color: var(--color3);
+    box-shadow: 0 -3px 5px 1px var(--color4);
+    z-index: 30;
+}
+
+.marco--row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.marco--left{
+    width: calc(5 * 100% / 165);
+    height: 100%;
+
+    background-color: var(--color3);
+    box-shadow: 3px 0 5px 1px var(--color4);
+    z-index: 20;
+
+}
+
+.marco--right{
+    width: calc(5 * 100% / 165);
+    height: 100%;
+
+    background-color: var(--color3);
+    box-shadow: -3px 0 5px 1px var(--color4);
+    z-index: 20;
+}
+
+.marco--img{
+    width: calc(115 * 100% / 165);
+    height: calc(180 * 100% / 230);
+    
+    border-top: calc(25px * 100 / 115 ) solid #acacac;
+    border-right: calc(25px * 100 / 180 ) solid #c4c4c4;
+    border-bottom: calc(25px * 100 / 115 ) solid #cfcfcf;
+    border-left: calc(25px * 100 / 180 ) solid #b8b8b8;
+}
+
+.marco--img img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px 1px var(--color3);
+}
